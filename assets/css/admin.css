@@ -1,0 +1,104 @@
+/* Admin Settings Styles */
+
+.ajax-pagination-settings {
+	max-width: 900px;
+}
+
+.ajax-pagination-settings h1 {
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccd0d4;
+}
+
+.ajax-pagination-settings-section {
+	background: #fff;
+	border: 1px solid #ccd0d4;
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.ajax-pagination-settings-section h2 {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0 0 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	color: #1d2327;
+}
+
+.ajax-pagination-settings-section h2 .dashicons {
+	color: #2271b1;
+}
+
+.ajax-pagination-settings-section .form-table th {
+	width: 200px;
+	padding: 15px 10px;
+}
+
+.ajax-pagination-settings-section .form-table td {
+	padding: 15px 10px;
+}
+
+.ajax-pagination-color-picker {
+	width: 100px;
+	height: 30px;
+	padding: 0;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+/* Shortcode Reference */
+.ajax-pagination-shortcode-reference {
+	background: #f6f7f7;
+	padding: 20px;
+	border-radius: 6px;
+}
+
+.ajax-pagination-shortcode-reference h3 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #1d2327;
+}
+
+.ajax-pagination-shortcode-reference h3:first-child {
+	margin-top: 0;
+}
+
+.ajax-pagination-shortcode-reference code {
+	display: inline-block;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+.ajax-pagination-shortcode-reference table {
+	margin-top: 10px;
+}
+
+.ajax-pagination-shortcode-reference table th,
+.ajax-pagination-shortcode-reference table td {
+	padding: 10px;
+}
+
+.ajax-pagination-shortcode-reference table code {
+	padding: 2px 6px;
+	font-size: 12px;
+}
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+	.ajax-pagination-settings-section .form-table th {
+		width: auto;
+		display: block;
+		padding-bottom: 5px;
+	}
+
+	.ajax-pagination-settings-section .form-table td {
+		display: block;
+	}
+}
