@@ -1,0 +1,426 @@
+/* AJAX Pagination Pro - Animations & Templates */
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+
+/* Fade In Up */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.ajax-pagination-animate-fadeInUp .ajax-pagination-card,
+.ajax-pagination-animate-fadeInUp .ajax-pagination-list,
+.ajax-pagination-animate-fadeInUp .ajax-pagination-minimal,
+.ajax-pagination-animate-fadeInUp .ajax-pagination-portfolio {
+	animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+.ajax-pagination-animate-fadeIn .ajax-pagination-card,
+.ajax-pagination-animate-fadeIn .ajax-pagination-list,
+.ajax-pagination-animate-fadeIn .ajax-pagination-minimal,
+.ajax-pagination-animate-fadeIn .ajax-pagination-portfolio {
+	animation: fadeIn 0.4s ease-out forwards;
+}
+
+/* Slide In Left */
+@keyframes slideInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.ajax-pagination-animate-slideInLeft .ajax-pagination-card,
+.ajax-pagination-animate-slideInLeft .ajax-pagination-list,
+.ajax-pagination-animate-slideInLeft .ajax-pagination-minimal,
+.ajax-pagination-animate-slideInLeft .ajax-pagination-portfolio {
+	animation: slideInLeft 0.5s ease-out forwards;
+}
+
+/* Slide In Right */
+@keyframes slideInRight {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.ajax-pagination-animate-slideInRight .ajax-pagination-card,
+.ajax-pagination-animate-slideInRight .ajax-pagination-list,
+.ajax-pagination-animate-slideInRight .ajax-pagination-minimal,
+.ajax-pagination-animate-slideInRight .ajax-pagination-portfolio {
+	animation: slideInRight 0.5s ease-out forwards;
+}
+
+/* Zoom In */
+@keyframes zoomIn {
+	from {
+		opacity: 0;
+		transform: scale(0.9);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.ajax-pagination-animate-zoomIn .ajax-pagination-card,
+.ajax-pagination-animate-zoomIn .ajax-pagination-list,
+.ajax-pagination-animate-zoomIn .ajax-pagination-minimal,
+.ajax-pagination-animate-zoomIn .ajax-pagination-portfolio {
+	animation: zoomIn 0.4s ease-out forwards;
+}
+
+/* Flip In */
+@keyframes flipIn {
+	from {
+		opacity: 0;
+		transform: perspective(400px) rotateX(90deg);
+	}
+	to {
+		opacity: 1;
+		transform: perspective(400px) rotateX(0);
+	}
+}
+
+.ajax-pagination-animate-flipIn .ajax-pagination-card,
+.ajax-pagination-animate-flipIn .ajax-pagination-list,
+.ajax-pagination-animate-flipIn .ajax-pagination-minimal,
+.ajax-pagination-animate-flipIn .ajax-pagination-portfolio {
+	animation: flipIn 0.6s ease-out forwards;
+}
+
+/* Bounce In */
+@keyframes bounceIn {
+	0% { opacity: 0; transform: scale(0.3); }
+	50% { opacity: 1; transform: scale(1.05); }
+	70% { transform: scale(0.9); }
+	100% { transform: scale(1); }
+}
+
+.ajax-pagination-animate-bounceIn .ajax-pagination-card,
+.ajax-pagination-animate-bounceIn .ajax-pagination-list,
+.ajax-pagination-animate-bounceIn .ajax-pagination-minimal,
+.ajax-pagination-animate-bounceIn .ajax-pagination-portfolio {
+	animation: bounceIn 0.6s ease-out forwards;
+}
+
+/* Stagger Animation */
+.ajax-pagination-animate-stagger .ajax-pagination-card:nth-child(1),
+.ajax-pagination-animate-stagger .ajax-pagination-list:nth-child(1),
+.ajax-pagination-animate-stagger .ajax-pagination-minimal:nth-child(1),
+.ajax-pagination-animate-stagger .ajax-pagination-portfolio:nth-child(1) { animation-delay: 0.05s; }
+
+.ajax-pagination-animate-stagger .ajax-pagination-card:nth-child(2),
+.ajax-pagination-animate-stagger .ajax-pagination-list:nth-child(2),
+.ajax-pagination-animate-stagger .ajax-pagination-minimal:nth-child(2),
+.ajax-pagination-animate-stagger .ajax-pagination-portfolio:nth-child(2) { animation-delay: 0.1s; }
+
+.ajax-pagination-animate-stagger .ajax-pagination-card:nth-child(3),
+.ajax-pagination-animate-stagger .ajax-pagination-list:nth-child(3),
+.ajax-pagination-animate-stagger .ajax-pagination-minimal:nth-child(3),
+.ajax-pagination-animate-stagger .ajax-pagination-portfolio:nth-child(3) { animation-delay: 0.15s; }
+
+.ajax-pagination-animate-stagger .ajax-pagination-card:nth-child(4),
+.ajax-pagination-animate-stagger .ajax-pagination-list:nth-child(4),
+.ajax-pagination-animate-stagger .ajax-pagination-minimal:nth-child(4),
+.ajax-pagination-animate-stagger .ajax-pagination-portfolio:nth-child(4) { animation-delay: 0.2s; }
+
+.ajax-pagination-animate-stagger .ajax-pagination-card:nth-child(5),
+.ajax-pagination-animate-stagger .ajax-pagination-list:nth-child(5),
+.ajax-pagination-animate-stagger .ajax-pagination-minimal:nth-child(5),
+.ajax-pagination-animate-stagger .ajax-pagination-portfolio:nth-child(5) { animation-delay: 0.25s; }
+
+.ajax-pagination-animate-stagger .ajax-pagination-card:nth-child(6),
+.ajax-pagination-animate-stagger .ajax-pagination-list:nth-child(6),
+.ajax-pagination-animate-stagger .ajax-pagination-minimal:nth-child(6),
+.ajax-pagination-animate-stagger .ajax-pagination-portfolio:nth-child(6) { animation-delay: 0.3s; }
+
+/* ============================================
+   LIST TEMPLATE
+   ============================================ */
+
+.ajax-pagination-list {
+	display: flex;
+	gap: 20px;
+	background: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ajax-pagination-list:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ajax-pagination-list-image {
+	flex-shrink: 0;
+	width: 200px;
+	overflow: hidden;
+}
+
+.ajax-pagination-list-image img {
+	display: block;
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+.ajax-pagination-list:hover .ajax-pagination-list-image img {
+	transform: scale(1.05);
+}
+
+.ajax-pagination-list-content {
+	flex: 1;
+	padding: 20px;
+}
+
+.ajax-pagination-list-title {
+	margin: 0 0 10px;
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+
+.ajax-pagination-list-title a {
+	color: #1d2327;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.ajax-pagination-list-title a:hover {
+	color: #2271b1;
+}
+
+.ajax-pagination-list-meta {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 10px;
+	color: #646970;
+	font-size: 13px;
+}
+
+.ajax-pagination-list-meta .dashicons {
+	font-size: 14px;
+	width: 14px;
+	height: 14px;
+	margin-right: 3px;
+	vertical-align: middle;
+}
+
+.ajax-pagination-list-excerpt {
+	margin: 10px 0;
+	color: #646970;
+	line-height: 1.6;
+}
+
+.ajax-pagination-list-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	color: #2271b1;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.ajax-pagination-list-link:hover {
+	color: #135e96;
+}
+
+.ajax-pagination-list-link .dashicons {
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	transition: transform 0.2s;
+}
+
+.ajax-pagination-list-link:hover .dashicons {
+	transform: translateX(4px);
+}
+
+/* ============================================
+   MINIMAL TEMPLATE
+   ============================================ */
+
+.ajax-pagination-minimal {
+	background: #fff;
+	border-bottom: 1px solid #eee;
+	padding: 20px 0;
+	margin-bottom: 0;
+}
+
+.ajax-pagination-minimal:first-child {
+	padding-top: 0;
+}
+
+.ajax-pagination-minimal-title {
+	margin: 0 0 8px;
+	font-size: 1.3em;
+	line-height: 1.4;
+}
+
+.ajax-pagination-minimal-title a {
+	color: #1d2327;
+	text-decoration: none;
+	transition: color 0.2s;
+}
+
+.ajax-pagination-minimal-title a:hover {
+	color: #2271b1;
+}
+
+.ajax-pagination-minimal-meta {
+	margin-bottom: 10px;
+	color: #646970;
+	font-size: 13px;
+}
+
+.ajax-pagination-minimal-excerpt {
+	margin: 10px 0;
+	color: #646970;
+	line-height: 1.6;
+}
+
+.ajax-pagination-minimal-link {
+	display: inline-flex;
+	align-items: center;
+	color: #2271b1;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 14px;
+}
+
+.ajax-pagination-minimal-link:hover {
+	color: #135e96;
+	text-decoration: underline;
+}
+
+/* ============================================
+   PORTFOLIO TEMPLATE
+   ============================================ */
+
+.ajax-pagination-portfolio {
+	position: relative;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.ajax-pagination-portfolio:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ajax-pagination-portfolio-image {
+	position: relative;
+	overflow: hidden;
+}
+
+.ajax-pagination-portfolio-image img {
+	display: block;
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	transition: transform 0.4s;
+}
+
+.ajax-pagination-portfolio:hover .ajax-pagination-portfolio-image img {
+	transform: scale(1.1);
+}
+
+.ajax-pagination-portfolio-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(34, 113, 177, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.ajax-pagination-portfolio:hover .ajax-pagination-portfolio-overlay {
+	opacity: 1;
+}
+
+.ajax-pagination-portfolio-overlay .dashicons {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+	color: #fff;
+}
+
+.ajax-pagination-portfolio-content {
+	padding: 15px;
+	background: #fff;
+}
+
+.ajax-pagination-portfolio-title {
+	margin: 0 0 5px;
+	font-size: 1.1em;
+}
+
+.ajax-pagination-portfolio-title a {
+	color: #1d2327;
+	text-decoration: none;
+}
+
+.ajax-pagination-portfolio-title a:hover {
+	color: #2271b1;
+}
+
+.ajax-pagination-portfolio-categories {
+	color: #646970;
+	font-size: 12px;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+	.ajax-pagination-list {
+		flex-direction: column;
+	}
+
+	.ajax-pagination-list-image {
+		width: 100%;
+	}
+
+	.ajax-pagination-list-image img {
+		height: 200px;
+	}
+
+	.ajax-pagination-portfolio-image img {
+		height: 200px;
+	}
+}

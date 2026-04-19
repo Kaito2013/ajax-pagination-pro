@@ -54,6 +54,14 @@ class AJAX_Pagination_Pro_Core {
 			AJAX_PAGINATION_PRO_VERSION
 		);
 
+		// Animations CSS
+		wp_enqueue_style(
+			'ajax-pagination-animations',
+			AJAX_PAGINATION_PRO_URL . 'assets/css/animations.css',
+			array( 'ajax-pagination-pro' ),
+			AJAX_PAGINATION_PRO_VERSION
+		);
+
 		// JS
 		wp_enqueue_script(
 			'ajax-pagination-pro',
