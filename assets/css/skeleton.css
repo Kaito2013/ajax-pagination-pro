@@ -1,0 +1,308 @@
+/* AJAX Pagination Pro - Skeleton Placeholder Styles */
+
+/* ============================================
+   SKELETON LOADING
+   ============================================ */
+
+.ajax-pagination-lazy {
+	background: #f6f7f7;
+	transition: opacity 0.3s ease;
+}
+
+.ajax-pagination-lazy:not(.loaded) {
+	animation: ajax-pagination-skeleton-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes ajax-pagination-skeleton-pulse {
+	0% {
+		opacity: 0.6;
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0.6;
+	}
+}
+
+.ajax-pagination-lazy.loaded {
+	animation: none;
+	background: none;
+}
+
+.ajax-pagination-lazy.error {
+	background: #fef2f2;
+	border: 1px dashed #d63638;
+}
+
+/* ============================================
+   SKELETON CARD
+   ============================================ */
+
+.ajax-pagination-skeleton-card {
+	background: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ajax-pagination-skeleton-image {
+	width: 100%;
+	height: 200px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+}
+
+.ajax-pagination-skeleton-content {
+	padding: 20px;
+}
+
+.ajax-pagination-skeleton-title {
+	height: 20px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	width: 80%;
+}
+
+.ajax-pagination-skeleton-meta {
+	display: flex;
+	gap: 15px;
+	margin-bottom: 15px;
+}
+
+.ajax-pagination-skeleton-date,
+.ajax-pagination-skeleton-author {
+	height: 14px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	width: 100px;
+}
+
+.ajax-pagination-skeleton-excerpt {
+	margin-bottom: 15px;
+}
+
+.ajax-pagination-skeleton-excerpt-line {
+	height: 14px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.ajax-pagination-skeleton-excerpt-line:nth-child(1) { width: 100%; }
+.ajax-pagination-skeleton-excerpt-line:nth-child(2) { width: 90%; }
+.ajax-pagination-skeleton-excerpt-line:nth-child(3) { width: 75%; }
+
+.ajax-pagination-skeleton-link {
+	height: 16px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	width: 100px;
+}
+
+@keyframes ajax-pagination-skeleton-shimmer {
+	0% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: -200% 0;
+	}
+}
+
+/* ============================================
+   SKELETON LIST
+   ============================================ */
+
+.ajax-pagination-skeleton-list {
+	display: flex;
+	gap: 20px;
+	background: #fff;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-bottom: 20px;
+}
+
+.ajax-pagination-skeleton-list-image {
+	flex-shrink: 0;
+	width: 200px;
+	height: 150px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+}
+
+.ajax-pagination-skeleton-list-content {
+	flex: 1;
+	padding: 20px;
+}
+
+.ajax-pagination-skeleton-list-title {
+	height: 20px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	width: 60%;
+}
+
+.ajax-pagination-skeleton-list-excerpt {
+	margin-bottom: 15px;
+}
+
+.ajax-pagination-skeleton-list-excerpt-line {
+	height: 14px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.ajax-pagination-skeleton-list-excerpt-line:nth-child(1) { width: 100%; }
+.ajax-pagination-skeleton-list-excerpt-line:nth-child(2) { width: 85%; }
+
+/* ============================================
+   SKELETON PORTFOLIO
+   ============================================ */
+
+.ajax-pagination-skeleton-portfolio {
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ajax-pagination-skeleton-portfolio-image {
+	width: 100%;
+	height: 250px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+}
+
+.ajax-pagination-skeleton-portfolio-content {
+	padding: 15px;
+	background: #fff;
+}
+
+.ajax-pagination-skeleton-portfolio-title {
+	height: 18px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	margin-bottom: 8px;
+	width: 70%;
+}
+
+.ajax-pagination-skeleton-portfolio-category {
+	height: 14px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	width: 50%;
+}
+
+/* ============================================
+   SKELETON MINIMAL
+   ============================================ */
+
+.ajax-pagination-skeleton-minimal {
+	padding: 20px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.ajax-pagination-skeleton-minimal-title {
+	height: 22px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	width: 70%;
+}
+
+.ajax-pagination-skeleton-minimal-date {
+	height: 14px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	margin-bottom: 15px;
+	width: 120px;
+}
+
+.ajax-pagination-skeleton-minimal-excerpt {
+	margin-bottom: 15px;
+}
+
+.ajax-pagination-skeleton-minimal-excerpt-line {
+	height: 14px;
+	background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+	background-size: 200% 100%;
+	animation: ajax-pagination-skeleton-shimmer 1.5s infinite;
+	border-radius: 4px;
+	margin-bottom: 8px;
+}
+
+.ajax-pagination-skeleton-minimal-excerpt-line:nth-child(1) { width: 100%; }
+.ajax-pagination-skeleton-minimal-excerpt-line:nth-child(2) { width: 60%; }
+
+/* ============================================
+   LOADING SPINNER
+   ============================================ */
+
+.ajax-pagination-image-loading {
+	position: relative;
+}
+
+.ajax-pagination-image-loading::after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 30px;
+	height: 30px;
+	margin: -15px 0 0 -15px;
+	border: 3px solid #f3f3f3;
+	border-top-color: #2271b1;
+	border-radius: 50%;
+	animation: ajax-pagination-spinner 0.8s linear infinite;
+}
+
+@keyframes ajax-pagination-spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+
+@media screen and (max-width: 768px) {
+	.ajax-pagination-skeleton-list {
+		flex-direction: column;
+	}
+
+	.ajax-pagination-skeleton-list-image {
+		width: 100%;
+		height: 200px;
+	}
+
+	.ajax-pagination-skeleton-portfolio-image {
+		height: 200px;
+	}
+}

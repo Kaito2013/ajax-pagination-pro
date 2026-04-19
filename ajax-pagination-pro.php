@@ -73,6 +73,8 @@ final class AJAX_Pagination_Pro {
 		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-shortcode.php';
 		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-template-manager.php';
 		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-search.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-lazy-loading.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-cache.php';
 
 		// Admin classes
 		if ( is_admin() ) {
@@ -157,6 +159,8 @@ final class AJAX_Pagination_Pro {
 		AJAX_Pagination_Pro_Shortcode::get_instance();
 		AJAX_Pagination_Pro_Template_Manager::get_instance();
 		AJAX_Pagination_Pro_Search::get_instance();
+		AJAX_Pagination_Pro_Lazy_Loading::get_instance();
+		AJAX_Pagination_Pro_Cache::get_instance();
 
 		if ( is_admin() ) {
 			AJAX_Pagination_Pro_Admin_Settings::get_instance();

@@ -62,6 +62,14 @@ class AJAX_Pagination_Pro_Core {
 			AJAX_PAGINATION_PRO_VERSION
 		);
 
+		// Skeleton CSS
+		wp_enqueue_style(
+			'ajax-pagination-skeleton',
+			AJAX_PAGINATION_PRO_URL . 'assets/css/skeleton.css',
+			array( 'ajax-pagination-pro' ),
+			AJAX_PAGINATION_PRO_VERSION
+		);
+
 		// JS
 		wp_enqueue_script(
 			'ajax-pagination-pro',
