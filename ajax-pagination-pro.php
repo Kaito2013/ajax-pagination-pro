@@ -75,6 +75,11 @@ final class AJAX_Pagination_Pro {
 		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-search.php';
 		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-lazy-loading.php';
 		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-cache.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-image-optimizer.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-cdn.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-performance.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-accessibility.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-structured-data.php';
 
 		// Admin classes
 		if ( is_admin() ) {
@@ -161,6 +166,11 @@ final class AJAX_Pagination_Pro {
 		AJAX_Pagination_Pro_Search::get_instance();
 		AJAX_Pagination_Pro_Lazy_Loading::get_instance();
 		AJAX_Pagination_Pro_Cache::get_instance();
+		AJAX_Pagination_Pro_Image_Optimizer::get_instance();
+		AJAX_Pagination_Pro_CDN::get_instance();
+		AJAX_Pagination_Pro_Performance::get_instance();
+		AJAX_Pagination_Pro_Accessibility::get_instance();
+		AJAX_Pagination_Pro_Structured_Data::get_instance();
 
 		if ( is_admin() ) {
 			AJAX_Pagination_Pro_Admin_Settings::get_instance();

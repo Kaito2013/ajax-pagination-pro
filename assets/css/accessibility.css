@@ -1,0 +1,125 @@
+/* AJAX Pagination Pro - Accessibility Styles */
+
+/* Screen reader only */
+.ajax-pagination-sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+/* Focus styles */
+.ajax-pagination-container a:focus,
+.ajax-pagination-container button:focus,
+.ajax-pagination-container input:focus {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+.ajax-pagination-container a:focus:not(:focus-visible),
+.ajax-pagination-container button:focus:not(:focus-visible),
+.ajax-pagination-container input:focus:not(:focus-visible) {
+	outline: none;
+}
+
+.ajax-pagination-container a:focus-visible,
+.ajax-pagination-container button:focus-visible,
+.ajax-pagination-container input:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+/* Skip link */
+.ajax-pagination-skip-link {
+	position: absolute;
+	top: -100%;
+	left: 0;
+	background: #2271b1;
+	color: #fff;
+	padding: 10px 20px;
+	z-index: 100000;
+	text-decoration: none;
+	font-weight: 600;
+	border-radius: 0 0 4px 0;
+}
+
+.ajax-pagination-skip-link:focus {
+	top: 0;
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+	.ajax-pagination-card {
+		border: 2px solid #000;
+	}
+
+	.ajax-pagination-numbers a,
+	.ajax-pagination-numbers span {
+		border: 2px solid #000;
+	}
+
+	.ajax-pagination-numbers span.current {
+		background: #000;
+		color: #fff;
+	}
+
+	.ajax-pagination-load-more {
+		border: 2px solid #000;
+	}
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+	.ajax-pagination-card,
+	.ajax-pagination-list,
+	.ajax-pagination-minimal,
+	.ajax-pagination-portfolio,
+	.ajax-pagination-lazy {
+		animation: none !important;
+		transition: none !important;
+	}
+
+	.ajax-pagination-lazy {
+		opacity: 1 !important;
+	}
+
+	.ajax-pagination-spinner {
+		animation: none !important;
+	}
+}
+
+/* Focus within for cards */
+.ajax-pagination-card:focus-within {
+	outline: 2px solid #2271b1;
+	outline-offset: 4px;
+}
+
+/* Pagination keyboard navigation indicator */
+.ajax-pagination-numbers a:focus,
+.ajax-pagination-numbers span:focus {
+	position: relative;
+}
+
+.ajax-pagination-numbers a:focus::after,
+.ajax-pagination-numbers span:focus::after {
+	content: '';
+	position: absolute;
+	bottom: -4px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 6px;
+	height: 6px;
+	background: #2271b1;
+	border-radius: 50%;
+}
+
+/* Live region styling */
+#ajax-pagination-live-region {
+	font-size: 16px;
+	font-weight: 600;
+}
