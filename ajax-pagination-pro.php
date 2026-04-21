@@ -81,6 +81,11 @@ final class AJAX_Pagination_Pro {
 		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-accessibility.php';
 		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-structured-data.php';
 
+		// License & WooCommerce
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-license-manager.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-woocommerce-integration.php';
+		require_once AJAX_PAGINATION_PRO_DIR . 'includes/class-update-checker.php';
+
 		// Admin classes
 		if ( is_admin() ) {
 			require_once AJAX_PAGINATION_PRO_DIR . 'admin/class-admin-settings.php';
@@ -171,6 +176,11 @@ final class AJAX_Pagination_Pro {
 		AJAX_Pagination_Pro_Performance::get_instance();
 		AJAX_Pagination_Pro_Accessibility::get_instance();
 		AJAX_Pagination_Pro_Structured_Data::get_instance();
+
+		// License Manager & WooCommerce Integration
+		AJAX_Pagination_Pro_License_Manager::get_instance();
+		AJAX_Pagination_Pro_WooCommerce_Integration::get_instance();
+		AJAX_Pagination_Pro_Update_Checker::get_instance();
 
 		if ( is_admin() ) {
 			AJAX_Pagination_Pro_Admin_Settings::get_instance();

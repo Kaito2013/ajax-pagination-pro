@@ -55,6 +55,16 @@ class AJAX_Pagination_Pro_Admin_Settings {
 			'ajax-pagination-settings',
 			array( $this, 'render_settings_page' )
 		);
+
+		// Sub-menu License
+		add_submenu_page(
+			'options-general.php',
+			__( 'AJAX Pagination License', 'ajax-pagination-pro' ),
+			__( 'AJAX Pagination License', 'ajax-pagination-pro' ),
+			'manage_options',
+			'ajax-pagination-license',
+			array( $this, 'render_license_page' )
+		);
 	}
 
 	/**
@@ -398,5 +408,15 @@ class AJAX_Pagination_Pro_Admin_Settings {
 			</form>
 		</div>
 		<?php
+	}
+
+	/**
+	 * Render License page — delegates to License Manager class.
+	 *
+	 * @return void
+	 */
+	public function render_license_page() {
+		$license_manager = AJAX_Pagination_Pro_License_Manager::get_instance();
+		$license_manager->render_license_settings();
 	}
 }
